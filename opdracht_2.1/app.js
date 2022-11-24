@@ -1,12 +1,20 @@
 let blok = document.getElementById("blok");
 let position = 0;
 
-function move() {
+console.log(window.innerWidth);
 
-    position += 50
+function move() {
+    if(position >= window.innerWidth){
+        position = 0
+
+    }else{
+        position += 50
     
-    blok.style.left =  position + "px"
+        blok.style.left =  position + "px"
+    }
+
+   
 
     
 }
-setInterval(move, 1000)
+setInterval(move, 100)

@@ -1,0 +1,9 @@
+*{
+    font-size: 62.5%;
+}
+#blok{
+   position: absolute;
+    height: 5rem;
+    width: 5rem;
+    background-color: black;
+}
